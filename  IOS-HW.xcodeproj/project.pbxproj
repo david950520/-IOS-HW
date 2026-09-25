@@ -10,9 +10,28 @@
 		000000000000000000000120 /* IOS-HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-HW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0442592A306711E800FC58BA /* Exceptions for "IOS-HW" folder in "IOS-HW" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Docs/battle-arena-1.png",
+				"Docs/battle-arena-4.png",
+				"Docs/card-detail.png",
+				"Docs/card-guide.png",
+				"Docs/gameplay-demo.mov",
+				"Docs/home-screen.png",
+				README.md,
+			);
+			target = 000000000000000100000000 /* IOS-HW */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		000000000000000000000010 /* IOS-HW */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0442592A306711E800FC58BA /* Exceptions for "IOS-HW" folder in "IOS-HW" target */,
+			);
 			path = "IOS-HW";
 			sourceTree = "<group>";
 		};
@@ -250,6 +269,8 @@
 		000000000000000111000000 /* Debug configuration for PBXNativeTarget "IOS-HW" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
@@ -288,6 +309,8 @@
 		000000000000000112000000 /* Release configuration for PBXNativeTarget "IOS-HW" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
