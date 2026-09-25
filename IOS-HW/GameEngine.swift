@@ -814,7 +814,14 @@ class GameEngine: ObservableObject {
         playerCrowns = aiTowersDestroyed
         aiCrowns = playerTowersDestroyed
 
-        if isOvertime {
+        let enemyKingTowerDestroyed = towers.contains {
+            $0.faction == .ai && $0.isKingTower && $0.isDestroyed
+        }
+
+        if enemyKingTowerDestroyed {
+            playerCrowns = 3
+            endGame(victory: true, reason: "摧毀了敵方國王主塔！")
+        } else if isOvertime {
             if aiTowersDestroyed > 0 {
                 endGame(victory: true, reason: "加時決勝中，敵方塔先被摧毀！")
             } else if playerTowersDestroyed > 0 {
